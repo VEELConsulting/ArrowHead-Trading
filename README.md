@@ -19,31 +19,14 @@ arrowhead-trading/
     └── main.js             ← Theme toggle, scroll reveal, accordions
 ```
 
-## Deploy to GitHub Pages
-
-1. **Create a new GitHub repository**
-   - Go to github.com → New repository
-   - Name it `arrowhead-trading` (or any name you prefer)
-   - Set to **Public**
-
-2. **Push these files**
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial build"
-   git branch -M main
-   git remote add origin https://github.com/YOUR_USERNAME/arrowhead-trading.git
-   git push -u origin main
-   ```
-
-3. **Enable GitHub Pages**
+^. **Enable GitHub Pages**
    - Go to your repo → Settings → Pages
    - Source: **Deploy from a branch**
    - Branch: `main` / `/ (root)`
    - Save
 
-4. **Your site is live at:**
-   `https://YOUR_USERNAME.github.io/arrowhead-trading/`
+^. **Site is live at:**
+   `https://veelconsulting.github.io/ArrowHead-Trading/index.html`
 
 ## Adding a Custom Domain (when ready)
 
@@ -52,7 +35,7 @@ arrowhead-trading/
 3. At your DNS provider, add a CNAME record:
    - Name: `www`
    - Value: `YOUR_USERNAME.github.io`
-4. Also add A records for the apex domain pointing to GitHub's IPs:
+^. Also add A records for the apex domain pointing to GitHub's IPs:
    - `185.199.108.153`
    - `185.199.109.153`
    - `185.199.110.153`
