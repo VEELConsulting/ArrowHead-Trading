@@ -20,7 +20,7 @@ arrowhead-trading/
 ```
 
 ^. **Enable GitHub Pages**
-   - Go to your repo → Settings → Pages
+   - Go to the repo → Settings → Pages
    - Source: **Deploy from a branch**
    - Branch: `main` / `/ (root)`
    - Save
@@ -30,11 +30,11 @@ arrowhead-trading/
 
 ## Adding a Custom Domain (when ready)
 
-1. Purchase your domain
-2. In repo Settings → Pages → Custom domain → enter your domain
-3. At your DNS provider, add a CNAME record:
+1. Purchase the domain
+2. In repo Settings → Pages → Custom domain → enter the domain
+3. At the DNS provider, add a CNAME record:
    - Name: `www`
-   - Value: `YOUR_USERNAME.github.io`
+   - Value: `the_USERNAME.github.io`
 ^. Also add A records for the apex domain pointing to GitHub's IPs:
    - `185.199.108.153`
    - `185.199.109.153`
