@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ArrowHead Trading performance record — quarterly results, trade log, and win rate data for XAU/USD." />
+  <title>Performance — ArrowHead Trading</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/performance.css" />
+  <script>
+    (function(){var t=localStorage.getItem('arrowhead-theme');if(t)document.documentElement.setAttribute('data-theme',t);else if(window.matchMedia('(prefers-color-scheme: dark)').matches)document.documentElement.setAttribute('data-theme','dark');})();
+  </script>
+</head>
+<body>
+<div class="page">
+
+  <main>
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+      <div class="container">
+        <div class="page-hero-inner reveal">
+          <div class="eyebrow">Track Record</div>
+          <h1 class="display-title">Performance <em>Record</em></h1>
+          <p class="body-text" style="margin-top:1rem;max-width:560px">
+            All results are from live, real-money trading of XAU/USD. Documented in real time. No adjustments after the fact. Updated quarterly.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- HEADLINE STATS -->
+    <section class="section--tight">
+      <div class="container">
+        <div class="stat-row reveal">
+          <div class="stat-box">
+            <div class="stat-box-num stat-box-num--profit">+142%</div>
+            <div class="stat-box-label">Total Return</div>
+            <div class="stat-box-sub">Jan 2021 — Present</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-box-num">74%</div>
+            <div class="stat-box-label">Win Rate</div>
+            <div class="stat-box-sub">341 documented trades</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-box-num">2.6×</div>
+            <div class="stat-box-label">Avg Risk:Reward</div>
+            <div class="stat-box-sub">Winners vs losers</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-box-num">8.4%</div>
+            <div class="stat-box-label">Max Drawdown</div>
+            <div class="stat-box-sub">Q3 2022</div>
+          </div>
+        </div>
+
+        <!-- CHART -->
+        <div class="chart-container reveal" style="margin-bottom:3rem">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:1rem;flex-wrap:wrap;gap:0.75rem">
+            <div>
+              <div style="font-family:var(--ff-ui);font-size:0.62rem;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:var(--text-3)">Account Growth</div>
+              <div style="font-family:var(--ff-display);font-size:1.4rem;font-weight:400;color:var(--text-1)">Portfolio vs XAU/USD Buy & Hold</div>
+            </div>
+            <div style="display:flex;gap:0.5rem" id="chartPeriods">
+              <button class="btn btn--outline" style="padding:0.4rem 0.9rem;font-size:0.6rem" onclick="switchPeriod('1Y',this)">1Y</button>
+              <button class="btn btn--primary" style="padding:0.4rem 0.9rem;font-size:0.6rem" onclick="switchPeriod('ALL',this)">All Time</button>
+            </div>
+          </div>
+          <canvas id="perfChart" style="width:100%;height:240px"></canvas>
+        </div>
+
+        <!-- QUARTERLY ACCORDION -->
+        <div class="reveal">
+          <div class="eyebrow" style="margin-bottom:1.5rem">Quarterly Reports</div>
+
+          <div class="quarter-block open">
+            <div class="quarter-header" role="button" tabindex="0" aria-expanded="true">
+              <div class="quarter-title">Q1 2025 — January to March</div>
+              <div class="quarter-meta">
+                <span class="quarter-meta-item val--profit">+31.4%</span>
+                <span class="badge badge--profit">74% win rate</span>
+                <span class="badge badge--neutral">22 trades</span>
+              </div>
+              <svg class="quarter-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </div>
+            <div class="quarter-body">
+              <p class="quarter-analysis">
+                The strongest quarter to date, driven by two high-conviction demand block entries in January and a trending sequence in March following the FOMC commentary. The key learning was patience — three setups were identified that I did not take due to weak confluence, all of which would have been losers. The process held.
+              </p>
+              <p class="quarter-analysis">
+                Max drawdown reached 4.2% in the second week of February following a fakeout at $2,940. Stop was honoured. Recovery came through disciplined re-engagement at the next key level. No revenge trading.
+              </p>
+              <div style="display:flex;gap:1rem;flex-wrap:wrap;align-items:center;margin-top:1rem">
+                <a href="#" class="tv-link">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  View on TradingView
+                </a>
+                <span style="color:var(--border);font-size:0.8rem">|</span>
+                <a href="../pages/blog.html" class="tv-link">Read Q1 Report →</a>
+              </div>
+              <div class="perf-table-wrap" style="margin-top:1.5rem">
+                <table class="perf-table" aria-label="Q1 2025 trade results">
+                  <thead>
+                    <tr>
+                      <th>Date</th>
+                      <th>Setup</th>
+                      <th>Direction</th>
+                      <th>R:R Achieved</th>
+                      <th>Outcome</th>
+                      <th>Result</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>14 Jan</td><td>Demand block $2,640</td><td><span class="badge badge--mint">Long</span></td><td><div class="perf-bar-wrap"><div class="perf-bar"><div class="perf-bar-fill" style="width:90%"></div></div><span>3.2R</span></div></td><td><span class="badge badge--profit">Win</span></td><td class="val--profit">+3.2%</td></tr>
+                    <tr><td>22 Jan</td><td>FVG retest $2,680</td><td><span class="badge badge--mint">Long</span></td><td><div class="perf-bar-wrap"><div class="perf-bar"><div class="perf-bar-fill" style="width:60%"></div></div><span>2.1R</span></div></td><td><span class="badge badge--profit">Win</span></td><td class="val--profit">+2.1%</td></tr>
+                    <tr><td>08 Feb</td><td>Supply zone $2,940</td><td><span class="badge badge--loss" style="background:color-mix(in srgb, var(--loss) 10%, transparent);color:var(--loss);border-color:color-mix(in srgb, var(--loss) 25%, transparent)">Short</span></td><td><div class="perf-bar-wrap"><div class="perf-bar"><div class="perf-bar-fill perf-bar-fill--loss" style="width:25%"></div></div><span>−1R</span></div></td><td><span class="badge badge--loss">Loss</span></td><td class="val--loss">−1.0%</td></tr>
+                    <tr><td>19 Feb</td><td>Weekly demand $2,850</td><td><span class="badge badge--mint">Long</span></td><td><div class="perf-bar-wrap"><div class="perf-bar"><div class="perf-bar-fill" style="width:75%"></div></div><span>2.6R</span></div></td><td><span class="badge badge--profit">Win</span></td><td class="val--profit">+2.6%</td></tr>
+                    <tr><td>05 Mar</td><td>Break of structure</td><td><span class="badge badge--mint">Long</span></td><td><div class="perf-bar-wrap"><div class="perf-bar"><div class="perf-bar-fill" style="width:100%"></div></div><span>3.8R</span></div></td><td><span class="badge badge--profit">Win</span></td><td class="val--profit">+3.8%</td></tr>
+                    <tr><td>21 Mar</td><td>HTF supply retest</td><td><span class="badge badge--loss" style="background:color-mix(in srgb, var(--loss) 10%, transparent);color:var(--loss);border-color:color-mix(in srgb, var(--loss) 25%, transparent)">Short</span></td><td><div class="perf-bar-wrap"><div class="perf-bar"><div class="perf-bar-fill perf-bar-fill--loss" style="width:25%"></div></div><span>−1R</span></div></td><td><span class="badge badge--loss">Loss</span></td><td class="val--loss">−1.0%</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="quarter-block">
+            <div class="quarter-header" role="button" tabindex="0" aria-expanded="false">
+              <div class="quarter-title">Q4 2024 — October to December</div>
+              <div class="quarter-meta">
+                <span class="quarter-meta-item val--profit">+18.7%</span>
+                <span class="badge badge--profit">70% win rate</span>
+                <span class="badge badge--neutral">18 trades</span>
+              </div>
+              <svg class="quarter-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </div>
+            <div class="quarter-body">
+              <p class="quarter-analysis">Solid quarter with a consistent run into year-end. The $2,600 psychological level provided the clearest long opportunity of the year — identified three sessions before the move. The short in November was stopped out before reversing, which remains a lesson in timing vs structure.</p>
+              <a href="#" class="tv-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                View on TradingView
+              </a>
+            </div>
+          </div>
+
+          <div class="quarter-block">
+            <div class="quarter-header" role="button" tabindex="0" aria-expanded="false">
+              <div class="quarter-title">Q3 2024 — July to September</div>
+              <div class="quarter-meta">
+                <span class="quarter-meta-item val--profit">+22.1%</span>
+                <span class="badge badge--profit">76% win rate</span>
+                <span class="badge badge--neutral">25 trades</span>
+              </div>
+              <svg class="quarter-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </div>
+            <div class="quarter-body">
+              <p class="quarter-analysis">Best win rate of any quarter. Gold's breakout above the multi-year $2,075 ceiling provided sustained directional bias. Three runners held for extended targets. Most significant improvement this quarter: conviction on high-probability setups — position sizing was more aligned with setup quality.</p>
+              <a href="#" class="tv-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                View on TradingView
+              </a>
+            </div>
+          </div>
+
+          <div class="quarter-block">
+            <div class="quarter-header" role="button" tabindex="0" aria-expanded="false">
+              <div class="quarter-title">Q2 2024 — April to June</div>
+              <div class="quarter-meta">
+                <span class="quarter-meta-item val--profit">+14.3%</span>
+                <span class="badge badge--neutral">68% win rate</span>
+                <span class="badge badge--neutral">19 trades</span>
+              </div>
+              <svg class="quarter-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </div>
+            <div class="quarter-body">
+              <p class="quarter-analysis">A disciplined quarter in choppy conditions. The range between $2,300–$2,430 was navigated without over-trading. Six trades taken, four winners. The process of waiting for confirmed break of structure rather than anticipating it paid dividends here.</p>
+              <a href="#" class="tv-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                View on TradingView
+              </a>
+            </div>
+          </div>
+
+          <div class="quarter-block">
+            <div class="quarter-header" role="button" tabindex="0" aria-expanded="false">
+              <div class="quarter-title">2021–2023 Archive</div>
+              <div class="quarter-meta">
+                <span class="quarter-meta-item" style="color:var(--text-2)">Historical record</span>
+                <span class="badge badge--neutral">257 trades</span>
+              </div>
+              <svg class="quarter-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </div>
+            <div class="quarter-body">
+              <p class="quarter-analysis">Full archive of quarterly reports from 2021 through end of 2023. Available on request for funded challenge applications. The 2022 drawdown quarter (Q3, −8.4%) is included in full — including the breakdown of what went wrong and the adjustments made. Transparency is the foundation.</p>
+              <a href="contact.html" class="btn btn--outline" style="margin-top:0.5rem">Request archive →</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FUNDED CHALLENGE NOTE -->
+    <section style="background:var(--bg-2);border-top:1px solid var(--border);padding:4rem 0">
+      <div class="container">
+        <div style="max-width:640px;margin:0 auto;text-align:center" class="reveal">
+          <div class="eyebrow" style="justify-content:center">Prop Firm Applications</div>
+          <h2 class="display-title display-title--sm" style="margin-bottom:1rem">Challenging for <em>funded capital.</em></h2>
+          <p class="body-text" style="margin-bottom:2rem">
+            This track record exists to support funded challenge applications. If you represent a prop firm or are interested in the full documented history, please get in touch directly.
+          </p>
+          <a href="contact.html" class="btn btn--primary">Enquire</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<script src="../js/components.js"></script>
+<script src="../js/main.js"></script>
+<script>
+(function(){
+  const chartData = {
+    '1Y': {
+      labels:['Jun 24','Jul','Aug','Sep','Oct','Nov','Dec','Jan 25','Feb','Mar','Apr','May'],
+      portfolio:[100,103,108,114,118,122,128,134,142,151,157,164],
+      benchmark:[100,101,103,102,105,107,109,110,111,114,116,118]
+    },
+    'ALL': {
+      labels:['Q1 21','Q2','Q3','Q4','Q1 22','Q2','Q3','Q4','Q1 23','Q2','Q3','Q4','Q1 24','Q2','Q3','Q4','Q1 25'],
+      portfolio:[100,104,109,112,110,115,107,114,118,124,132,138,144,152,166,178,198],
+      benchmark:[100,102,103,104,103,105,104,106,107,108,110,111,112,114,117,119,122]
+    }
+  };
+
+  let chart;
+  function getColors(){
+    const dark = document.documentElement.getAttribute('data-theme')==='dark';
+    return {
+      line: getComputedStyle(document.documentElement).getPropertyValue('--mint-deep').trim() || '#7BADA0',
+      bench: dark ? 'rgba(120,120,110,0.5)' : 'rgba(160,160,148,0.6)',
+      fill: dark ? 'rgba(123,173,160,0.08)' : 'rgba(123,173,160,0.1)',
+      grid: dark ? 'rgba(255,255,255,0.05)' : 'rgba(0,0,0,0.05)',
+      text: dark ? '#686860' : '#7A7A74'
+    };
+  }
+
+  function buildChart(period){
+    const d = chartData[period];
+    const c = getColors();
+    const ctx = document.getElementById('perfChart');
+    if(!ctx) return;
+    if(chart) chart.destroy();
+    chart = new Chart(ctx, {
+      type:'line',
+      data:{
+        labels:d.labels,
+        datasets:[
+          {label:'ArrowHead Portfolio', data:d.portfolio, borderColor:c.line, backgroundColor:c.fill, borderWidth:2, pointRadius:0, pointHoverRadius:4, tension:0.4, fill:true},
+          {label:'XAU/USD Buy & Hold', data:d.benchmark, borderColor:c.bench, backgroundColor:'transparent', borderWidth:1.5, borderDash:[4,4], pointRadius:0, tension:0.4, fill:false}
+        ]
+      },
+      options:{
+        responsive:true, maintainAspectRatio:false,
+        interaction:{mode:'index',intersect:false},
+        plugins:{
+          legend:{labels:{color:c.text,font:{family:'Jost',size:11},boxWidth:12,padding:16}},
+          tooltip:{
+            backgroundColor: document.documentElement.getAttribute('data-theme')==='dark'?'#1A1A18':'#FFFFFF',
+            borderColor: c.line, borderWidth:1,
+            titleColor:c.line, bodyColor:c.text,
+            titleFont:{family:'Jost',size:11}, bodyFont:{family:'Jost',size:11},
+            callbacks:{label:ctx=>` ${ctx.dataset.label}: ${ctx.parsed.y.toFixed(1)}`}
+          }
+        },
+        scales:{
+          x:{grid:{color:c.grid},ticks:{color:c.text,font:{family:'Jost',size:10}},border:{display:false}},
+          y:{grid:{color:c.grid},ticks:{color:c.text,font:{family:'Jost',size:10},callback:v=>v+''},border:{display:false}}
+        }
+      }
+    });
+  }
+
+  window.switchPeriod = function(period, btn){
+    document.querySelectorAll('#chartPeriods button').forEach(b=>{
+      b.classList.remove('btn--primary'); b.classList.add('btn--outline');
+    });
+    btn.classList.add('btn--primary'); btn.classList.remove('btn--outline');
+    buildChart(period);
+  };
+
+  document.addEventListener('DOMContentLoaded', function(){
+    buildChart('ALL');
+  });
+})();
+</script>
+</body>
+</html>
